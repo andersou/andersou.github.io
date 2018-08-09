@@ -64,15 +64,15 @@ You can add notification, warning and error boxes like this:
 
 ### Notification
 
-{: .box-note}
+{: .alert.alert-info}
 **Note:** This is a notification box.
 
 ### Warning
 
-{: .box-warning}
+{: .alert.alert-warning}
 **Warning:** This is a warning box.
 
 ### Error
 
-{: .box-error}
+{: .alert.alert-danger}
 **Error:** This is an error box.
