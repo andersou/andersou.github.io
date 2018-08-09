@@ -49,6 +49,21 @@ var foo = function(x) {
 }
 foo(3)
 ```
+```python
+#!/usr/bin/python3
+from engine import RunForrestRun
+
+"""Teste de string overflow lateraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal!"""
+
+class Foo:
+	def __init__(self, var):
+		self.var = var
+		self.run()
+
+	def run(self):
+		RunForrestRun()  # run along!
+```
+
 
 And here is the same code yet again but with line numbers:
 
