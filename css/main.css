@@ -723,7 +723,7 @@ td.gutter {
   border-left-width: 5px;
   border-radius: 5px 3px 3px 5px;
 }
-
+/* 
 .box-note {
   background-color: #eee;
   border-left-color: #2980b9;
@@ -737,7 +737,7 @@ td.gutter {
 .box-error {
   background-color: #f4dddb;
   border-left-color: #c0392b;
-}
+} */
 
 /* Fix table border github gist snippets */
 
@@ -792,7 +792,7 @@ td.gutter {
   bottom: 0;
 }
 body{
-  color: rgba(255,255,255,0.9)
+  color: rgb(219, 219, 219)
 }
 /* .posts-list{
   margin:1rem;
@@ -806,4 +806,13 @@ footer {
 
 .blog-post{
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: white;
+  font-weight: bolder
+
+}
+.gutter.gl{
+  width: 0.1%;
 }
