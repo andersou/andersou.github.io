@@ -26,11 +26,11 @@
       }
     },
     "opacity": {
-      "value": 1,
+      "value": 0.3,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.5,
         "opacity_min": 0,
         "sync": false
       }
