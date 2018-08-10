@@ -243,7 +243,14 @@ prose:
         field:
           element: "checkbox"
           label: "Show avatar"
+          value: true
           help: "If you have an avatar configured in the _config.yml but you want to turn it off on a specific page"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Enable comments"
+          value: true
+          help: "If you want do add Disqus comments to a specific page, use comments: true. Comments are automatically enabled on blog posts; to turn comments off for a specific post"
       - name: "bigimg"
         field:
           element: "text"
