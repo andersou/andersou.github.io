@@ -820,3 +820,6 @@ a{
 .page-heading{
   margin-top: 2rem
 }
+.fb-comments iframe{
+  background-color: white
+}
