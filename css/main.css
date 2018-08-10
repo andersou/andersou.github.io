@@ -817,7 +817,7 @@ a{
   width: 0.1%;
 }
 
-.page-heading{
+.page-heading, .post-heading{
   margin-top: 2rem
 }
 .fb-comments iframe{
