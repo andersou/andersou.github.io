@@ -12,7 +12,7 @@ tags:
   - test
   - multiple
   - tags
-published: false
+published: true
 show-avatar: true
 comments: true
 ---
