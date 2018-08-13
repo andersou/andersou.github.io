@@ -75,9 +75,8 @@ Exemplo:
 
 Nesse momento pode começar a surgir uma dúvida: tem algum problema de ter `<section>` dentro de um `<article>`, e a resposta é **não**.
 
-Naturalmente, páginas irão conter `<article>` dentro de `<section>` e vice-versa, como por exemplo, em um *jornal*:
 {: .alert.alert-info}
-Podemos ter um `<article>` de esporte, dentro da `<section>` de esporte, e cada artigo ter uma `<section>` com informações técnicas.
+Naturalmente, páginas irão conter `<article>` dentro de `<section>` e vice-versa, como por exemplo, em um *jornal*, podemos ter: Um `<article>` de esporte, dentro da `<section>` de esporte, e cada artigo ter uma `<section>` com informações técnicas.
 
 ### Os elementos `<header>` e `<footer>`
 
