@@ -17,17 +17,19 @@ Na web, a semântica, auxilia tanto o desenvolvedor quanto o próprio browser a 
 Elementos como `div` e `span`, não nos dizem claramente o que temos em seu conteúdo. Por outro lado, elementos como `table`, `form`, `article`, `ul` - deixam mais claros o seu conteúdo.
 
 Até o *HTML4*, classes e id's eram usados para indicar e estilizar elementos como cabeçalhos, rodapés e etc.
-Dificultava bastante as engines de pesquisa para separar o que era conteúdo do que não era. 
+Isso dificultava bastante as engines de pesquisa para separar o que era conteúdo do que não era. 
 
 O *HTML5* introduziu uma série nova de elementos que tem por objetividade indicar melhor o seu conteúdo e auxiliar no compartilhamento e reuso entre aplicações e etc.
 
-Em muitos códigos-fontes anteriores *(ou não rsrs)* era possível perceber algumas partes assim: `<div id="nav">...</div>`,`<div id="header">...</div>`,`<div id="footer">...</div>`, que indicam o bloco da barra de navegação, bloco do cabeçalho, bloco do rodapé e etc.
+Em muitos códigos-fontes anteriores *(ou não rsrs)* era possível perceber algumas partes assim: 
+`<div id="nav">...</div>`,`<div id="header">...</div>`,`<div id="footer">...</div>`, que indicam o bloco da barra de navegação, bloco do cabeçalho, bloco do rodapé e etc.
 
-Com *HTML5* os mesmos elementos descritos acima, podem ser escritos dessa maneira: `<nav>...</nav>`,`<header>...</header>`, `<footer>...</footer>`.
+Com *HTML5* os mesmos elementos descritos acima, podem ser escritos dessa maneira: 
+`<nav>...</nav>`,`<header>...</header>`, `<footer>...</footer>`.
 
-Já começou a ficar mais claro, não? Mas esse são só alguns dos novos elementos introduzidos.
+Já começou a ficar mais claro, não? Mas esses são só alguns dos novos elementos introduzidos.
 
-Entre elas, também:
+Entre eles, também:
 
 - `<article>`
 - `<aside>`
