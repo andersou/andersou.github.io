@@ -9,9 +9,8 @@ tags:
   - html5
   - html
   - web semantica
+subtitle: 'Uma forma mais semântica de codar, utilizando HTML5'
 ---
-## Uma forma mais semântica de codar, utilizando HTML5
-
 A *semântica* é o estudo do entendimento das palavras em uma linguagem qualquer.
 Na web, a semântica, auxilia tanto o desenvolvedor quanto o próprio browser a entender o contexto dos elementos, o que esses elementos **significam**.
 
@@ -142,10 +141,3 @@ No *HTML5*, uma imagem e sua legenda (`<figcaption>`) são colocadas dentro de u
 Os elementos que eu exemplifiquei aqui, são apenas alguns dos elementos semânticos inseridos no *HTML5*, para mais informações, vocês podem acessar a [W3Schools - HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp).
 
 Abraços e hasta-luego.
-
-
-
-
-
-
-
