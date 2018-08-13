@@ -141,6 +141,6 @@ No *HTML5*, uma imagem e sua legenda (`<figcaption>`) são colocadas dentro de u
 
 Os elementos exemplificados aqui, são apenas alguns dos elementos semânticos inseridos no *HTML5*, para mais informações, vocês podem acessar a [W3Schools - HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp).
 
-Esse post é uma releitura da [W3Schools](https://www.w3schools.com).
+Esse post é uma releitura da postagem original da [W3Schools](https://www.w3schools.com).
 
 Abraços e hasta-luego.
