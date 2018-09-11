@@ -4,6 +4,7 @@ published: true
 show-avatar: true
 comments: true
 title: 'Spark : descomplicando o Java para web'
+image: /img/sparklogo.png
 ---
 Quando comecei a programar, sempre tive um apreço imenso pelo Java (um pouco masoquista). Criar aplicações desktop *cross-platform* parecia simples com auxílio do Netbeans e isso era suficiente para eu estar convicto de que era um programador de verdade.
 
