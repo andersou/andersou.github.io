@@ -6,17 +6,17 @@ comments: true
 title: 'Spark : descomplicando o Java para web'
 image: /img/sparklogo2.png
 ---
-Quando comecei a programar, sempre tive um apreço imenso pelo Java (um pouco masoquista). Criar aplicações desktop *cross-platform* parecia simples com auxílio do Netbeans e isso era suficiente para eu estar convicto de que era um programador de verdade.
+Quando comecei a programar, sempre tive um apreço imenso pelo Java (um pouco masoquista da minha parte). Criar aplicações desktop *cross-platform* parecia simples com auxílio do Netbeans e isso era suficiente para eu estar convicto de que era um programador de verdade.
 
 Eu era um militante Java, até o dia em que comecei o tortuoso percurso de especialização na especificação de JavaEE (diga-se o *Java para web*). Depois de criar algumas aplicações, comecei a perceber que os *workarounds* eram grandes para features simples, se o caso fosse UX era [PrimeFaces](http://primefaces.org) neles!
 
 Como minhas justificativas para os *workarounds* da plataforma eram sempre a UX, comecei a estudar técnicas de *Client-side Rendering* utilizando frameworks como **React**(tão masoquista quanto), **Angular**, por último e principalmente **Vue.JS**.
 
-Pela facilidade que era *casar* esses frameworks frontend com outros frameworks como Express.js (Node.js), Bottle (Python), e a incorporação em serviços IOT-like, fui cada vez mais me distanciando do JavaEE.
+Pela facilidade que era *casar* esses frameworks frontend com outros frameworks como Express.js (Node.js), Bottle (Python), e a incorporação em serviços IOT-like, fui cada vez mais me distanciando do JavaEE. Até o dia que conheci o [Spark](http://sparkjava.com).
 
 ## Começando no Spark
 
-Depois dessa introdução de cair lágrimas, vamos ao que interessa, primeiro destacar algumas características do [Spark](http://sparkjava.com/documentation):
+Depois dessa introdução de cair lágrimas, vamos ao que interessa, primeiro destacar algumas características que me motivaram a abrir a IDE e utilizar o [Spark](http://sparkjava.com/documentation):
 
 * Java 8 - lambdas expressions compatível
 * Kotlin compatível
