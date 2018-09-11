@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 show-avatar: true
 comments: true
 title: 'Spark : descomplicando o Java para web'
