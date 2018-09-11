@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 show-avatar: true
 comments: true
 title: 'Spark : descomplicando o Java para web'
@@ -83,7 +83,7 @@ Adicionamos o wrapper do handlebars para Spark no nosso `pom.xml`
 ```
 
 Adicionamos nosso template à pasta `src/main/resources/templates`, com o nome de `index.hbs`: 
-
+{% raw %}
 ```hbs
 <html>
 <head>
@@ -106,7 +106,7 @@ Adicionamos nosso template à pasta `src/main/resources/templates`, com o nome d
 </html>
 
 ```
-
+{% endraw %}
 E por fim adicionar um pouco de código: 
 ```java
 get("/", (request, response) -> {
