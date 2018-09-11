@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 show-avatar: true
 comments: true
 title: 'Spark : descomplicando o Java para web'
@@ -68,7 +68,62 @@ Antes de avançar, a pasta `src/main/resources` vai ser o nosso ponto de partida
 
 ### Server Side Rendering
 
-Para renderizar as páginas do lado do servidor, é conveniente utilizar uma engine de templates.
-Neste exemplo, optei pelo [mustache](https://mustache.github.io/mustache.5.html).
+Para renderizar as páginas do lado do servidor, é conveniente utilizar uma engine de templates para montar nossas views.
+Neste exemplo, optei pelo [handlebars](https://handlebarsjs.com).
 
+Adicionamos o wrapper do handlebars para Spark no nosso `pom.xml`
 
+```xml
+<dependency>
+    <groupId>com.sparkjava</groupId>
+    <artifactId>spark-template-handlebars</artifactId>
+    <version>2.7.1</version>
+</dependency>
+
+```
+
+Adicionamos nosso template à pasta `src/main/resources/templates`, com o nome de `index.hbs`: 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>
+        Olá {{nome}}
+    </h2>
+    Seus emails:
+    <ul>
+        {{#each emails}}
+            <li>
+                {{this}}
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
+
+```
+
+E por fim adicionar um pouco de código: 
+```java
+get("/", (request, response) -> {
+                    HashMap<String, Object> params = new HashMap();
+                    params.put("nome", "Joazinho");
+                    params.put("emails", new String[]{"Email do trabalho", "Email da faculdade", "Email do Pedrinho"});
+                    return new ModelAndView(params, "index.hbs");
+                }, new HandlebarsTemplateEngine());
+```
+
+Agora quando acessamos nosso localhost denovo, temos a seguinte mensagem:
+
+> Olá Joazinho
+Seus emails:
+Email do trabalho
+Email da faculdade
+Email do Pedrinho
+
+Pronto! finalizamos a renderização de nossa View. Simples e facil, não?!
