@@ -84,8 +84,7 @@ Adicionamos o wrapper do handlebars para Spark no nosso `pom.xml`
 
 Adicionamos nosso template à pasta `src/main/resources/templates`, com o nome de `index.hbs`: 
 
-```handlebars
-<!DOCTYPE html>
+```hbs
 <html>
 <head>
     <title>Exemplo</title>
