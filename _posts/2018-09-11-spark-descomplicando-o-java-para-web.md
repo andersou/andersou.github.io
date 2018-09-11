@@ -84,7 +84,7 @@ Adicionamos o wrapper do handlebars para Spark no nosso `pom.xml`
 
 Adicionamos nosso template à pasta `src/main/resources/templates`, com o nome de `index.hbs`: 
 
-```html
+```handlebars
 <!DOCTYPE html>
 <html>
 <head>
@@ -127,3 +127,5 @@ Email da faculdade
 Email do Pedrinho
 
 Pronto! finalizamos a renderização de nossa View. Simples e facil, não?!
+
+### API-like
