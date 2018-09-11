@@ -9,7 +9,7 @@ Quando comecei a programar, sempre tive um apreço imenso pelo Java (um pouco ma
 
 Eu era um militante Java, até o dia em que comecei o tortuoso percurso de especialização na especificação de JavaEE (diga-se o *Java para web*). Depois de criar algumas aplicações, comecei a perceber que os *workarounds* eram grandes para features simples, se o caso fosse UX era [PrimeFaces](http://primefaces.org) neles!
 
-Como minhas justificativas para os *workarounds* da plataforma eram sempre a UX, comecei a estudar técnicas de *Client-side Rendering* utilizando frameworks como **React**(tão masoquista quanto),**Angular**, por último e principalmente **Vue.JS**.
+Como minhas justificativas para os *workarounds* da plataforma eram sempre a UX, comecei a estudar técnicas de *Client-side Rendering* utilizando frameworks como **React**(tão masoquista quanto), **Angular**, por último e principalmente **Vue.JS**.
 
 Pela facilidade que era *casar* esses frameworks frontend com outros frameworks como Express.js (Node.js), Bottle (Python), e a incorporação em serviços IOT-like, fui cada vez mais me distanciando do JavaEE.
 
@@ -112,19 +112,44 @@ E por fim adicionar um pouco de código:
 get("/", (request, response) -> {
                     HashMap<String, Object> params = new HashMap();
                     params.put("nome", "Joazinho");
-                    params.put("emails", new String[]{"Email do trabalho", "Email da faculdade", "Email do Pedrinho"});
+                    params.put("emails",
+                    	new String[]{
+                            "Email do trabalho", 
+                            "Email da faculdade", 
+                            "Email do Pedrinho"});
                     return new ModelAndView(params, "index.hbs");
                 }, new HandlebarsTemplateEngine());
 ```
 
 Agora quando acessamos nosso localhost denovo, temos a seguinte mensagem:
 
-> Olá Joazinho
-Seus emails:
-Email do trabalho
-Email da faculdade
-Email do Pedrinho
+```html
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>
+        Olá Joazinho
+    </h2>
+    Seus emails:
+    <ul>
+            <li>
+                Email do trabalho
+            </li>
+            <li>
+                Email da faculdade
+            </li>
+            <li>
+                Email do Pedrinho
+            </li>
+    </ul>
+</body>
+</html>
+```
 Pronto! finalizamos a renderização de nossa View. Simples e facil, não?!
 
 ### API-like
