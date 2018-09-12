@@ -19,7 +19,7 @@ Eu era um militante Java, até o dia em que comecei o tortuoso percurso de espec
 
 Como minhas justificativas para os *workarounds* da plataforma eram sempre a UX, comecei a estudar técnicas de *Client-side Rendering* utilizando frameworks como **React**(tão masoquista quanto), **Angular**, por último e principalmente **Vue.JS**.
 
-Pela facilidade que era *casar* esses frameworks frontend com outros frameworks como Express.js (Node.js), Bottle (Python), e a incorporação em serviços IOT-like, fui cada vez mais me distanciando do JavaEE. Até o dia que conheci o [Spark](http://sparkjava.com).
+Pela facilidade que era *casar* esses frameworks frontend com outros frameworks como *Express.js* (Node.js), *Bottle* (Python), *Laravel* (PHP) e a incorporação em serviços IOT-like, fui cada vez mais me distanciando do JavaEE. Até o dia que conheci o [Spark](http://sparkjava.com).
 
 ## Começando no Spark
 
