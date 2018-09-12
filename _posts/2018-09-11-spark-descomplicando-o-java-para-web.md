@@ -223,7 +223,7 @@ Gson gson = new Gson();
 AvisoDao avisoDao = new AvisoDao();
 get("/todo/:id","application/json", (request, response) -> avisoDao.getAviso(request.params(":id")), gson::toJson);
 ```
-Esse exemplo, considera que já implementados uma classe para acessar nossas entidades, o `AvisoDao`. Para facilitar podemos passar o Content-Type no segundo parâmetro e o último parâmetro é uma instância de um `ResponseTransformer`, interface funcional que recebe um Objeto como parâmetro e devolve uma String, dessa forma conseguimos inferir com `[Methods References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)` a chamada ao método *toJson()*.
+Esse exemplo, considera que já implementados uma classe para acessar nossas entidades, o `AvisoDao`. Para facilitar podemos passar o Content-Type no segundo parâmetro e o último parâmetro é uma instância de um `ResponseTransformer`, interface funcional que recebe um Objeto como parâmetro e devolve uma String, dessa forma conseguimos inferir com [`Methods References`](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html) a chamada ao método *toJson()*.
 
 > Com isso já é possível acessar http://localhost:8080/todo/1 e ter nossa resposta em JSON.
 
