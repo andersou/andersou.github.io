@@ -228,6 +228,6 @@ Esse exemplo, considera que já implementados uma classe para acessar nossas ent
 > Com isso já é possível acessar http://localhost:8080/todo/1 e ter nossa resposta em JSON.
 
 Acho que esse post foi o suficiente para dar um gostinho do que é o Spark (e o que ele representa rsrs).
-A documentação completa pode ser acessada [aqui](http://sparkjava.com/documentation), e alguns tutoriais bem bacanas (aqui)[http://sparkjava.com/tutorials/]
+A documentação completa pode ser acessada [aqui](http://sparkjava.com/documentation), e alguns tutoriais bem bacanas [aqui](http://sparkjava.com/tutorials/)
 
-![]({{site.baseurl}}/https://media.giphy.com/media/MGdfeiKtEiEPS/giphy-downsized.gif)
+![](https://media.giphy.com/media/MGdfeiKtEiEPS/giphy-downsized.gif)
