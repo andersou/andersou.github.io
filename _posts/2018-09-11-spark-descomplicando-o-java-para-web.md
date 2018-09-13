@@ -164,7 +164,8 @@ Pronto! finalizamos a renderização de nossa View. Simples e facil, não?!
 
 Se nosso foco não for *server-side rendering*, outra alternativa pode ser construir um servidor REST. O Spark provê ótimas maneiras de fazer isso de forma limpa e concisa.
 
-Vamos fazer um servidor que utiliza JSON ?
+Para demonstrar, vamos ver um exemplo de um servidor REST que utiliza JSON para a troca de mensagens.
+
 Para isso primeiramente precisamos de uma forma de mapear um Objeto Java para JSON, para facilitar nosso trabalho existem bibliotecas com `Jackson` ou `Gson`.
 
 No exemplo, iremos utilizar o `Gson` e para isso precisaremos importá-la em nosso `pom.xml`
@@ -228,14 +229,14 @@ Bom, agora que já sabemos como converter nossa entidade em JSON, podemos levar 
 ```java
 Gson gson = new Gson();
 AvisoDao avisoDao = new AvisoDao();
-get("/todo/:id",
+get("/avisos/:id",
     "application/json", 
     (request, response) -> avisoDao.getAviso(request.params(":id")), 
     gson::toJson);
 ```
-Esse exemplo, considera que já implementados uma classe para acessar nossas entidades, o `AvisoDao`. Para facilitar podemos passar o Content-Type no segundo parâmetro e o último parâmetro é uma instância de um `ResponseTransformer`, interface funcional que recebe um Objeto como parâmetro e devolve uma String, dessa forma conseguimos inferir com [`Methods References`](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html) a chamada ao método *toJson()*.
+Esse exemplo, considera que já implementamos uma classe para acessar nossa entidade, o `AvisoDao`. Para facilitar podemos passar o Content-Type no segundo parâmetro e o último parâmetro é uma instância de um `ResponseTransformer`, interface funcional que recebe um Objeto como parâmetro e devolve uma String, dessa forma conseguimos inferir com [`Methods References`](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html) a chamada ao método *toJson()*.
 
-> Com isso já é possível acessar http://localhost:8080/todo/1 e ter nossa resposta em JSON.
+> Com isso já é possível acessar http://localhost:/avisos/1 e ter nossa resposta em JSON.
 
 Acho que esse post foi o suficiente para dar um gostinho do que é o Spark (e o que ele representa rsrs).
 A documentação completa pode ser acessada [aqui](http://sparkjava.com/documentation), e alguns tutoriais bem bacanas [aqui](http://sparkjava.com/tutorials/)
