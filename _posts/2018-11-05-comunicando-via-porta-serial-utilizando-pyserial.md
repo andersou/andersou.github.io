@@ -8,6 +8,7 @@ tags:
   - python
   - serial
   - pyserial
+subtitle: Serial communication for humans (and devices)
 ---
 Muitas vezes precisamos comunicar com outros dispositivos e periféricos. Pra quem já tem alguma intimidade com o Arduino ou outra plataforma embarcada conhece bem o monitor serial, que é a forma mais fácil e básica de _conversarmos_ com nosso Arduino, porém nem sempre o monitor é suficiente para atender nossas necessidades.
 
