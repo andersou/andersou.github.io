@@ -59,9 +59,18 @@ with serial.Serial('COM3', 9600) as porta:
 
 Uma das funções que eu considero mais bacanas, principalmente na leitura é a função `readline` da classe `Serial`. Ela permite bloquear (ou não) a tarefa que esta realizando a leitura até receber o caracter de quebra de linha.
 
+```python
+linha = ser.readline()
+linha_str = linha.decode('utf-8') 	# Converte o array de bytes recebido para String
+```
+
 É possível ler byte a byte com a função `read`, retornando um objeto do tipo _bytes_.
 
 Podemos checar se tem algo no buffer de entrada ou saída com a propriedade `in_waiting` ou `out_waiting`.
+```python
+	if ser.in_waiting > 0:
+    	c = ser.read()
+```
 
 Para enviar algo, podemos usar a função `write`, passando como parâmetro uma instância de _bytes_ ou _bytearray_. Para converter um String para bytes, podemos usar a função `encode`, algo como:
 ```python
