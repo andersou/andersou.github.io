@@ -56,7 +56,7 @@ utilizando o laço `with`, não precisamos nos preocupar com o fechamento da por
 import serial
 with serial.Serial('COM3', 9600) as porta: 	
 	porta.write(b'hello')
-    linha = porta.readline()
+	linha = porta.readline()
 ```
 
 ### Utilizando a porta:
@@ -90,4 +90,3 @@ Mini terminal pySerial:
 
 Lista de portas seriais disponíveis:
 `python -m serial.tools.list_ports`
-
