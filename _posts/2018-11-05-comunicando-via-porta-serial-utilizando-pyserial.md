@@ -4,6 +4,10 @@ published: true
 show-avatar: true
 comments: true
 title: Comunicando via porta serial utilizando pySerial
+tags:
+  - python
+  - serial
+  - pyserial
 ---
 Muitas vezes precisamos comunicar com outros dispositivos e periféricos. Pra quem já tem alguma intimidade com o Arduino ou outra plataforma embarcada sabe que é uma necessidade, que as vezes apenas um monitor serial não pode solucionar.
 
