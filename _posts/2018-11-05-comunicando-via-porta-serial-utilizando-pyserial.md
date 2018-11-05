@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 show-avatar: true
 comments: true
 title: Comunicando via porta serial utilizando pySerial
