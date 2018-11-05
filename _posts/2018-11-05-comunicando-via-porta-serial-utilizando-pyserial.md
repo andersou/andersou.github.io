@@ -9,7 +9,7 @@ tags:
   - serial
   - pyserial
 ---
-Muitas vezes precisamos comunicar com outros dispositivos e periféricos. Pra quem já tem alguma intimidade com o Arduino ou outra plataforma embarcada sabe que é uma necessidade, que as vezes apenas um monitor serial não pode solucionar.
+Muitas vezes precisamos comunicar com outros dispositivos e periféricos. Pra quem já tem alguma intimidade com o Arduino ou outra plataforma embarcada conhece bem o monitor serial, que é a forma mais fácil e básica de _conversarmos_ com nosso Arduino, porém nem sempre o monitor é suficiente para atender nossas necessidades.
 
 Desenvolver a comunicação traz muita flexibilidade para o programador, como a vantagem de poder desenvolver o próprio sistema de supervisão ou dar um tratamento mais sofisticado para os dados adquiridos.
 Por **Python** nos trazer uma linguagem de fácil prototipação, tenho usado cada vez nos projetos e hoje vou falar um pouco sobre a popular biblioteca multiplataforma de comunicação serial, a [pySerial](https://pythonhosted.org/pyserial).
