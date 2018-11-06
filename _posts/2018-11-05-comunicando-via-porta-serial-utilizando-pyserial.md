@@ -73,8 +73,8 @@ linha_str = linha.decode('utf-8') 	# Converte o array de bytes recebido para Str
 
 Podemos checar se tem algo no buffer de entrada ou saída com a propriedade `in_waiting` ou `out_waiting`.
 ```python
-	if ser.in_waiting > 0:
-    	c = ser.read()
+if ser.in_waiting > 0:
+	c = ser.read()
 ```
 
 Para enviar algo, podemos usar a função `write`, passando como parâmetro uma instância de _bytes_ ou _bytearray_. Para converter um String para bytes, podemos usar a função `encode`, algo como:
